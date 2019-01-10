@@ -61,13 +61,17 @@ Highcharts.chart('container', {
       nullColor: '#EFEFEF',
       data: lst,
       tooltip: {
-          headerFormat: 'Úmrtí<br/>',
+          headerFormat: '',
           pointFormatter: function () {
               return "V roce " + this.x + " zemřelo o " + (this.value > 0 ? this.value + " % více " + this.y + "letých mužů než žen." : -this.value + " % více " + this.y + "letých žen než mužů.") +
                "<br>Úmrtí mužů: " + muzi[this.y][this.x-1919] + "<br>Úmrtí žen: " + zeny[this.y][this.x-1919];
           }
       },
       turboThreshold: Number.MAX_VALUE // #3404, remove after 4.0.5 release
+  }],
+
+  credits: [{
+    enabled: false
   }]
 
 });
