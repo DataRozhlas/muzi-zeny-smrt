@@ -1,4 +1,4 @@
-title: "Data z mobilů:<br>Praha se denně nafoukne o polovinu, v centru jsou návštěvníci v převaze"
+title: "Muži. Ženy. Smrt."
 perex: "Skoro 140 tisíc lidí přijede do Prahy každý den za prací. Míří hlavně do kancelářských budov a do centra města. S nimi pak dorazí i přes půl milionu návštěvníků. Ukázala to analýza dat o pohybu mobilních telefonů, kterou si nyní město nechává zpracovat."
 published: "21. dubna 2018"
 coverimg: https://interaktivni.rozhlas.cz/brexit/media/cover.jpg
@@ -7,13 +7,13 @@ styles: []
 libraries: [] #jquery, d3, d3v5, d3csv, highcharts, datatables
 options: [noheader, nopic] #wide, noheader (, nopic)
 ---
-<left>
-	<p>
-	<b>KAREL HYNEK MÁCHA</b>
-	</p><p>
-	Karel Hynek Mácha (16. listopadu 1810 Praha-Malá Strana[1] – 6. listopadu 1836 Litoměřice[2]) byl český básník a prozaik, představitel českého romantismu a zakladatel moderní české poezie. Proslavil se jak svým životem, tak dílem, jemuž dominuje Máj (1836).
-	</p>
-</left>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/heatmap.js"></script>
+<script src="https://code.highcharts.com/modules/boost-canvas.js"></script>
+<script src="https://code.highcharts.com/modules/boost.js"></script>
+<wide>
+<div id="container" style="height: 500px; min-width: 310px; max-width: 1000px; margin: 0 auto"></div>
+</wide>
 
 Během dne se lidé v Praze soustřeďují v okolí administrativních center a obchodů, po poledni se tak nejvíc zahustí okolí Andělu, centrum Prahy (Vodičkova ulice a Petrské náměstí) a Brumlovka nedaleko Budějovické. Na poslední jmenované adrese sídlí řada velkých korporací, mezi nimi i Microsoft nebo ČEZ. Pro srovnání, na zmíněných místech je ve „špičce“ okolo šesti stovek osob na jeden hektar, průměr Prahy je 25 obyvatel na [hektar](https://cs.wikipedia.org/wiki/Hektar) (Václavské náměstí má rozlohu asi 4 hektary).
 
