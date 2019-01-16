@@ -8,7 +8,8 @@ libraries: [] #jquery, d3, d3v5, d3csv, highcharts, datatables
 options: [noheader, nopic] #wide, noheader (, nopic)
 ---
 <wide>
-<div id="container" style="height: 500px; min-width: 310px; max-width: 1000px; margin: 0 auto"></div>
+<div id="story"></div>
+<div id="heatchart"></div>
 </wide>
 
 Během dne se lidé v Praze soustřeďují v okolí administrativních center a obchodů, po poledni se tak nejvíc zahustí okolí Andělu, centrum Prahy (Vodičkova ulice a Petrské náměstí) a Brumlovka nedaleko Budějovické. Na poslední jmenované adrese sídlí řada velkých korporací, mezi nimi i Microsoft nebo ČEZ. Pro srovnání, na zmíněných místech je ve „špičce“ okolo šesti stovek osob na jeden hektar, průměr Prahy je 25 obyvatel na [hektar](https://cs.wikipedia.org/wiki/Hektar) (Václavské náměstí má rozlohu asi 4 hektary).

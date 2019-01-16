@@ -10,37 +10,18 @@ Boost(Highcharts);
 
 const shapeColor = "rgba(0, 0, 0, 0.35)";
 
-Highcharts.chart("container", {
 
+const chart = Highcharts.chart("heatchart", {
   chart: {
     margin: [60, 10, 80, 50],
   },
-
-  annotations: [{
-    // search attrsMap to add class names in annotations.js
-    labels: [{
-      point: { x: 1940, y: 50, xAxis: 0, yAxis: 0 },
-      text: "Test",
-      className: "event1",
-    }],
-    shapes: [{
-      point: { x: 1940, y: 50, xAxis: 0, yAxis: 0 },
-      type: "circle",
-      r: 10,
-      className: "event1-shape",
-      fill: shapeColor,
-      strokeWidth: 0,
-    }],
-  }],
 
   boost: {
     useGPUTranslations: true,
   },
 
   title: {
-    text: "Test",
-    align: "left",
-    x: 40,
+    text: "",
   },
 
   subtitle: {
@@ -99,4 +80,38 @@ Highcharts.chart("container", {
   tooltip: {
     enabled: false,
   },
+});
+
+chart.addAnnotation({
+  // search attrsMap to add class names in annotations.js
+  labels: [{
+    point: { x: 1925, y: 30, xAxis: 0, yAxis: 0 },
+    text: "Test",
+    className: "event1",
+  }],
+  shapes: [{
+    point: { x: 1920, y: 30, xAxis: 0, yAxis: 0 },
+    width: chart.axes[0].toPixels(1930) - chart.axes[0].toPixels(1920),
+    height: chart.axes[1].toPixels(20) - chart.axes[1].toPixels(30),
+    rx: 60,
+    ry: 20,
+    type: "rect",
+    className: "event1-shape",
+    fill: shapeColor,
+    strokeWidth: 0,
+  }],
+});
+
+// stories
+const stories = {
+  event1: "Nejčastější příčinou úmrtí byla za první republiky tuberkulóza. Ta si mezi muži a ženami nevybírala. Důvod, proč mezi 20. a 35. rokem života častěji umíraly ženy, byla vysoká porodní úmrtnost.",
+};
+
+Object.keys(stories).forEach((el) => {
+  document.getElementsByClassName(`${el}-shape`)[0].addEventListener("click", () => {
+    document.getElementById("story").innerHTML = stories[el];
+  });
+  document.getElementsByClassName(el)[0].addEventListener("click", () => {
+    document.getElementById("story").innerHTML = stories[el];
+  });
 });

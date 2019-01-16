@@ -1638,6 +1638,8 @@
 		ControllableRect.attrsMap = H.merge(ControllablePath.attrsMap, {
 		    width: 'width',
 			height: 'height',
+			rx: 'rx',
+			ry: 'ry',
 			className: 'class'
 		});
 
