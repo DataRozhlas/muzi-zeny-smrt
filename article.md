@@ -7,10 +7,6 @@ styles: []
 libraries: [] #jquery, d3, d3v5, d3csv, highcharts, datatables
 options: [noheader, nopic] #wide, noheader (, nopic)
 ---
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/modules/heatmap.js"></script>
-<script src="https://code.highcharts.com/modules/boost-canvas.js"></script>
-<script src="https://code.highcharts.com/modules/boost.js"></script>
 <wide>
 <div id="container" style="height: 500px; min-width: 310px; max-width: 1000px; margin: 0 auto"></div>
 </wide>

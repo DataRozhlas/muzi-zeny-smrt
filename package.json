@@ -1,0 +1,37 @@
+{
+  "name": "samizdat-snodefall",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node builder.js watch",
+    "build": "node builder.js build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DataRozhlas/snodefall-builder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DataRozhlas/snodefall-builder/issues"
+  },
+  "homepage": "https://github.com/DataRozhlas/snodefall-builder#readme",
+  "dependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.0",
+    "babel-loader": "^8.0.4",
+    "clean-css": "^4.2.1",
+    "highcharts": "^7.0.1",
+    "marked": "^0.5.1",
+    "node-yaml": "^3.1.1",
+    "webpack": "^4.28.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.12.3"
+  }
+}
